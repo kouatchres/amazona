@@ -1,0 +1,14 @@
+#import  from '../fragments/UserFragment.gql';
+
+query AllUsers {
+  users {
+    id
+    email
+  }
+}
+
+query SingleUser($id: String!) {
+  me(id: $id) {
+    email
+  }
+}

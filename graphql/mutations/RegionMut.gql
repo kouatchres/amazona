@@ -1,0 +1,28 @@
+#import RegionFragment from "../fragments/RegionFragment.gql"
+
+mutation createRegion($data: RegionCreateInput!) {
+  createOneRegion(data: $data) {
+    ...RegionFragment
+  }
+}
+
+mutation createARegion($data: RegionCreateInput!) {
+  createRegion(data: $data) {
+    ...RegionFragment
+  }
+}
+
+mutation updateARegion(
+  $data: RegionUpdateInput!
+  $where: RegionWhereUniqueInput!
+) {
+  updateOneRegion(data: $data, where: $where) {
+    ...RegionFragment
+  }
+}
+
+mutation deleteARegion($where: RegionWhereUniqueInput!) {
+  deleteOneRegion(where: $where) {
+    id
+  }
+}

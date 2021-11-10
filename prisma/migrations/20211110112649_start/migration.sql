@@ -1,0 +1,10 @@
+-- CreateTable
+CREATE TABLE "Region" (
+    "id" TEXT NOT NULL,
+    "regName" TEXT NOT NULL,
+    "regCode" TEXT NOT NULL,
+    "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "updatedAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
+
+    CONSTRAINT "Region_pkey" PRIMARY KEY ("id")
+);
