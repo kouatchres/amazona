@@ -8,7 +8,7 @@ import theme from '../../styles/theme';
 import createEmotionCache from '../../styles/createEmotionCache';
 import { useApollo } from './lib/apolloClient';
 import { ApolloProvider } from '@apollo/client';
-// import Page from './Page';
+import Page from './Page';
 
 // Client-side cache, shared for the whole session of the user in the browser.
 const clientSideEmotionCache = createEmotionCache();
@@ -30,7 +30,9 @@ export default function MyApp(props: MyAppProps) {
         {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
         <CssBaseline />
         <ApolloProvider client={apolloClient}>
-          <Component {...pageProps} />
+          <Page>
+            <Component {...pageProps} />
+          </Page>
         </ApolloProvider>
       </ThemeProvider>
     </CacheProvider>

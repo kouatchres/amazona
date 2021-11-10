@@ -16,7 +16,15 @@ export default function Index() {
         <Link href="/about" color="secondary">
           Go to the about page
         </Link>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae nulla
+          odit, dicta commodi delectus eveniet in corporis saepe dignissimos
+          voluptatum ab amet numquam aliquid. Doloribus nobis officiis
+          repudiandae, ipsum aliquid mollitia amet facere, cumque natus a non
+          cum laudantium veritatis animi provident inventore incidunt dicta!
+        </p>
         <ProTip />
+
         <Copyright />
       </Box>
     </Container>

@@ -22,7 +22,7 @@
     "@graphql-codegen/typescript-react-apollo": "^2.2.5",
     "@graphql-codegen/typescript-resolvers": "^1.19.2",
     "@material-ui/lab": "^4.0.0-alpha.57",
-    "@mui/icons-material": "^5.0.0-rc.1",
+    "@mui/icons-material": "^5.1.0",
     "@mui/material": "^5.0.0-rc.1",
     "@nexus/schema": "^0.20.1",
     "@types/argon2": "^0.15.0",
